@@ -44,7 +44,7 @@ with open(csvpath, newline="") as csvfile:
     print(f'Total: ${total_amount}')
     print(f'Average Change: ${avg_change}')
     print(f'Greatest Increase in Profits: {greatest_inc_date} (${greatest_inc})')
-    print(f'Greatest Increase in Profits: {greatest_dec_date} (${greatest_dec})\n\n')
+    print(f'Greatest Decrease in Profits: {greatest_dec_date} (${greatest_dec})\n\n')
 
     output_txt_file = open("pybank_output.txt","w+")
     output_txt_file.write("Financial Analysis\n---------------------------------")
@@ -52,4 +52,4 @@ with open(csvpath, newline="") as csvfile:
     output_txt_file.write(f'\nTotal: ${total_amount}')
     output_txt_file.write(f'\nAverage Change: ${avg_change}')
     output_txt_file.write(f'\nGreatest Increase in Profits: {greatest_inc_date} (${greatest_inc})')
-    output_txt_file.write(f'\nGreatest Increase in Profits: {greatest_dec_date} (${greatest_dec})')
+    output_txt_file.write(f'\nGreatest Decrease in Profits: {greatest_dec_date} (${greatest_dec})')
